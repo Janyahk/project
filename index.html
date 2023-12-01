@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page -->
+    <title>Music</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container"><!-- Main Container -->
+        <header>  <!-- Header section -->
+        <div class="bar">
+            <!-- Logo image and page title -->
+           <div> <img src="photo/music.png" class="logo">
+            <p id="name">My song</p></div>
+             <!-- Navigation links -->
+            <ul>
+                <li><a href='index.html'>HOME</a></li>
+                <li><a href='index.html'>SETTINGS</a></li>
+                <li><a href='index.html'>YOUR LIBRARY</a></li>  
+                <li><a href='index.html'>PROFILE</a></li>
+                <!-- User image and login button -->
+                <li><img src="photo/janya.jpeg" class="master">
+                    <button class='login'>LOGIN</button></li>
+            </ul>
+        </div></header>
+        <!-- Main content section -->
+        <div class="content">
+             <!-- Left section with a heading -->
+            <div class="left">
+              <h1 class="high">THE <br>WORLD <br> OF MUSIC</h1>
+            </div>
+            <!-- Right section with music player details -->
+            <div class="rightmusicplayer">
+               <h><i>Click The Icon To Listen The Music</i></h>
+               <!-- Music details: image, title, artist -->
+               <img src="photo/pal.webp" class="pal">
+               <h1>Pal</h1>
+               <p>(Arijit Singh,Shreya Ghoshal)</p>
+               <!-- Music progress bar -->
+               <input type="range" value="0" id="progress">
+             <!-- Music player controls -->
+               <div class="controll"> 
+                <div> <img src="photo/back.png" id="back" > </div>
+              <div><img src="photo/play.png" id="play" > </div>
+               <div><img src="photo/next.png" id="next" > </div>
+             </div>
+            </div>
+        </div>
+    </div>
+    <!-- Audio player with source link to music file -->
+    <audio id="song">
+        <source src="music/pal.mp3" type="audio/mp3">
+    </audio>
+    <!-- Link to external JavaScript file -->
+    <script src="script.js">  
+    </script>
+</body>
+</html>
