@@ -13,12 +13,12 @@ icon.onclick=function(){
     if(song.paused){
         // If paused,play the song and change the icon to pause
         song.play();
-        icon.src="photo/pausee.png";
+        icon.src="pausee.png";
     }
     else{
          // If playing,pause the song and change the icon to play
         song.pause();
-        icon.src="photo/play.png";
+        icon.src="play.png";
     }
 
 }
@@ -33,5 +33,5 @@ progress.onchange=function(){
      // Play the song, set the current time to the progress value, and change the icon to pause
    song.play();
    song.currentTime=progress.value; 
-   icon.src="photo/pausee.png";
+   icon.src="pausee.png";
 }
